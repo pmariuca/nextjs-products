@@ -1,6 +1,5 @@
 const navigation = [
 	{name: 'Toate produsele', href: '/'},
-	/*{name: 'Dynamic Zone', href: '/dynamic'},*/
 	{ name: 'Tricouri', href: '/categories/Tricou' },
 	{ name: 'Hanorace', href: '/categories/Hanorac' },
 	{ name: 'Bluze', href: '/categories/Bluza' },

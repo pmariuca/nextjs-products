@@ -1,13 +1,15 @@
 import {API_CATEGORIES, API_ROUTE_CATEGORY, API_ROUTES} from "@/utils/constants";
-import ProductPage from "@/components/ProductPage";
+import ProductListingPage from "@/components/ProductListingPage";
 
 const Category = (props) => {
+	const {
+		products
+	} = props;
+
 	return (
-		<>
 		<div>
-			<ProductPage products={props}/>
+			<ProductListingPage products={products}/>
 		</div>
-		</>
 	);
 }
 

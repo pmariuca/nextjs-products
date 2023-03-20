@@ -3,7 +3,7 @@ import {API_URL} from "@/utils/constants";
 import Head from "next/head";
 import {Autoplay} from "swiper";
 
-export default function ProductPage({products}) {
+export default function ProductListingPage({products}) {
 	const renderProductImages = (productImages) => {
 		const {
 			data,
@@ -35,8 +35,7 @@ export default function ProductPage({products}) {
 					<h2 className="text-3xl font-normal leading-normal mt-0 mb-2">Products</h2>
 
 					<div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
-						{products?.data?.map((product) => {
-							console.log(products);
+						{products?.data.map((product) => {
 							const {
 								attributes: {
 									category,
@@ -47,6 +46,7 @@ export default function ProductPage({products}) {
 								},
 								id,
 							} = product;
+
 							return (
 								<div
 									key={id}

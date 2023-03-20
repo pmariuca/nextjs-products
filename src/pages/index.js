@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from "react";
 import {API_ROUTES} from "@/utils/constants";
-import ProductPage from "@/components/ProductPage";
+import ProductListingPage from "@/components/ProductListingPage";
 
 export default function Home({products}) {
     return (
@@ -9,7 +9,7 @@ export default function Home({products}) {
             <Head>
                 <title>Products</title>
             </Head>
-            <ProductPage products={products}/>
+            <ProductListingPage products={products}/>
         </>
     )
 }
